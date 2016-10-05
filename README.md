@@ -1,9 +1,3 @@
----
-layout: post
-title: Giới thiệu
-tags: ["Label"]
-thumb: http://placehold.it/100x100
----
 Đây là code mẩu dùng làm trang cá nhân.
 <!--more-->
 ### option

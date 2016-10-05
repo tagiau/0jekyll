@@ -11,7 +11,7 @@
 		{% endif %}
 	{% endif %}
 				<b>{{page.title}}</b>
-					{{content}}
+					{{page.content}}
 		{% if (page.tags) %}<p>{% for tag in page.tags%}<i class="glyphicon glyphicon-tags"></i>&nbsp;<span>{{tag}}</span>{% endfor %}</p>{% endif %}
 		{% include comment %}
 				</div>
