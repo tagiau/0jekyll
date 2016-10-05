@@ -1,0 +1,23 @@
+<div id="item" class="col-sm-6 col-md-4">
+	<div class="row">
+	{% if (post.thumb) %}
+		<a href="{{site.baseurl}}{{post.url}}">
+		{% assign x = post.thumb|slice:0,4 %}
+		{% if x == "http" %}
+		<img src="{{post.thumb}}" alt="{{post.title}}" class="pull-left img-thumbnail"/>
+		{% else %}
+		<img src="{{site.asseturl}}{{post.id}}/0.jpg" alt="{{post.title}}" class="pull-left img-thumbnail"/>
+		{% endif %}
+		</a>
+	{% endif %}
+		<b>{{post.title}}</b>
+		<p>
+		{% if (post.categories) %}
+		{% for cat in post.categories%}
+		<i class="glyphicon glyphicon-folder-open"></i><a class="btn btn-link" href="{{site.baseurl}}/{{cat}}">{{cat}}</a>&nbsp;
+		{% endfor %}<br>>
+		{% endif %}
+		{{post.excerpt|strip_html}}
+		<a href="{{site.baseurl}}{{post.url}}">{{site.lang.read_more}}</a></p>
+	</div>
+</div>

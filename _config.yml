@@ -1,0 +1,13 @@
+# Site settings
+baseurl: "/0jekyll"
+asseturl: "/assets"
+name: "0jekyll"
+skin: "classic"
+lang:
+ read_more: "...>>"
+
+# Build settings
+permalink: /:categories/:title
+excerpt_separator: <!--more-->
+paginate: 12
+paginate_path: /page:num

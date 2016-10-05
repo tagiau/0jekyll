@@ -1,0 +1,20 @@
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="vitinhkk, binhbat">
+<link href="https://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="apple-touch-icon.png" rel="apple-touch-icon">
+<link href="favicon.ico" rel="icon">
+<title>{{page.title}}</title>
+<style>
+img{max-width:100%;}
+#item{height:150px;overflow-y:auto;}
+</style>
+</head>
+<body>
+	<header>
+	{% include navi %}
+	</header>

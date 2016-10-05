@@ -1,0 +1,26 @@
+{% if paginator.total_pages > 1 %}
+<div class="text-center">
+{% if paginator.previous_page %}
+	{% if paginator.previous_page == 1 %}
+	<a href="{{site.baseurl}}" class="btn btn-info">&laquo;</a>
+	{% else %}
+	<a href="{{site.baseurl}}/page{{paginator.previous_page}}" class="btn btn-info">&laquo;</a>
+	{% endif %}
+{% endif %}
+<button class="btn btn-default" data-toggle="collapse" data-target="#pagination">
+    {{paginator.page}}/{{paginator.total_pages}} <span class="caret"></span>
+</button>
+{% if paginator.next_page %}
+	<a href="{{site.baseurl}}/page{{paginator.next_page}}" class="btn btn-info">&raquo;</a>
+{% endif %}
+</div>
+<div id="pagination" class="collapse">
+{% for count in (1..paginator.total_pages) %}
+    {% if count == paginator.page %}
+	<a href="#" class="btn btn-default active">{{count}}</a>
+	{% else %}
+	<a href="{{site.baseurl}}/page{{count}}" class="btn btn-default">{{count}}</a>
+	{% endif %}
+{% endfor %}
+</div>
+{% endif %}

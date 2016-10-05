@@ -1,0 +1,36 @@
+	<div class="container-fluid"><div class="row">
+		<div id="main" class="col-md-9 col-lg-8">
+		{% include pnavi %}
+		{% include adsense %}
+			<div class="row">
+				<div class="thumbnail">
+	{% if (page.thumb) %}{% assign x = page.thumb|slice:0,4 %}{% if x == "http" %}
+		<img src="{{page.thumb}}" alt="{{page.title}}" class="pull-right img-thumbnail"/>
+		{% else %}
+		<img src="{{site.asseturl}}{{page.id}}/0.jpg" alt="{{page.title}}" class="pull-right img-thumbnail"/>
+		{% endif %}
+	{% endif %}
+				<b>{{page.title}}</b>
+					{{content}}
+		{% if (page.tags) %}<p>{% for tag in page.tags%}<i class="glyphicon glyphicon-tags"></i>&nbsp;<span>{{tag}}</span>{% endfor %}</p>{% endif %}
+		{% include comment %}
+				</div>
+			</div>
+		</div><!-- .main -->
+			<div class="col-md-3 col-lg-4">
+				<div class="row">
+					<div class="col-lg-6"><div class="row">
+			{% if (page.tags) %}
+			<ul class="nav nav-pills nav-stacked">
+		{% for tag in page.tags %}
+		<li class="active"><a href="{{site.baseurl}}/tag#{{tag}}">{{tag}}</a></li>
+			{% for p in site.tags[tag] %}<li><a href="{{site.baseurl}}{{p.url}}">{{p.title}}</a></li>{% endfor %}
+		{% endfor %}
+		{% endif %}
+					</div></div>
+					<div class="col-lg-6 hidden-xs"><div class="row">
+						<img src="https://placehold.it/300x200" class="img-responsive" />
+					</div></div>
+				</div>
+			</div><!-- .sidebar -->
+</div></div><!-- .container-fulid -->
