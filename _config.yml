@@ -7,7 +7,6 @@ lang:
  read_more: "...>>"
 
 # Build settings
-markdown: kramdown
 permalink: /:categories/:title
 excerpt_separator: <!--more-->
 paginate: 12
