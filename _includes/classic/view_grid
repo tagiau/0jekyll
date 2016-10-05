@@ -17,7 +17,7 @@
 		<i class="glyphicon glyphicon-folder-open"></i><a class="btn btn-link" href="{{site.baseurl}}/{{cat}}">{{cat}}</a>&nbsp;
 		{% endfor %}<br>>
 		{% endif %}
-		{{post.excerpt|strip_html}}
+		{{post.excerpt}}
 		<a href="{{site.baseurl}}{{post.url}}">{{site.lang.read_more}}</a></p>
 	</div>
 </div>
