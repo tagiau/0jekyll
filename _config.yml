@@ -7,7 +7,7 @@ lang:
  read_more: "...>>"
 
 # Build settings
-markdown_ext: "markdown, mkdown, mkdn, mkd, md"
+markdown: redcarpet
 permalink: /:categories/:title
 excerpt_separator: <!--more-->
 paginate: 12
