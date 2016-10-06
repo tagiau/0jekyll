@@ -13,7 +13,7 @@
 		<b>{{post.title}}</b>
 		<br>
 {% include postcat %}
-{{post.content|truncatewords:30}}
+{{post.content|truncatewords:22}}
 <a href="{{site.baseurl}}{{post.url}}">{{site.lang.read_more}}</a>	
 	</div>
 </div>
