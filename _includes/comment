@@ -23,9 +23,8 @@ $(function() {
       $("input[type=text], textarea").val("");
       return false;
     });
-document.write(window.location.href);
-document.write(slugify(window.location.pathname));
 });
+document.write(window.location.href);
 </script>
 <div class="comments">Comment</div>
 <form id="comment">
