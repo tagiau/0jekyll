@@ -1,4 +1,4 @@
-<div class="item" class="col-sm-6 col-md-4">
+<div class="item col-sm-6 col-md-4">
 	<div class="row">
 		{% if (post.thumb) %}
 		<a href="{{site.baseurl}}{{post.url}}">
