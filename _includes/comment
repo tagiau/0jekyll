@@ -2,9 +2,8 @@
 function slugify(text){return text.toString().toLowerCase().trim().replace(/&/g, '-and-').replace(/[\s\W-]+/g, '-').replace(/[^a-zA-Z0-9-_]+/g,'');}
 $(function() {
   var ref = new Firebase("https://sieutv-comment.firebaseio.com/"),
-    //postRef = ref.child(slugify(window.location.pathname));
-	postRef = ref.child(md5(window.location.href));
-	alert(postRef);
+    postRef = ref.child(slugify(window.location.pathname));
+	//postRef = ref.child(md5(window.location.href));
     postRef.on("child_added", function(snapshot) {
       var newPost = snapshot.val();
       $(".comments").prepend('<div class="comment">' +
