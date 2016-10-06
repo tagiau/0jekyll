@@ -16,7 +16,7 @@
 					{% assign currentdate = post.date | date: "%Y" %}
 					{% if currentdate != date %}
 						{% unless forloop.first %}</ul>{% endunless %}
-						<b class="bg-primary">{{currentdate}}</b>
+						<b class="label label-primary">{{currentdate}}</b>
 						<ul class="nav nav-pills nav-stacked">
 						{% assign date = currentdate %}
 					{% endif %}
@@ -27,7 +27,7 @@
 			</div>
 			<div class="col-lg-6 hidden-xs">
 				<div class="row">
-				<!--img src="https://placehold.it/300x200" class="img-responsive" /-->
+				<!-- -->
 				</div>
 			</div>
 		</div>
