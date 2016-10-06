@@ -1,7 +1,7 @@
 	<div class="container-fluid"><div class="row">
 		<div id="main" class="col-md-9 col-lg-8">
-		{% include pnavi %}
 		{% include adsense %}
+		{% include pnavi %}
 			<div class="row">
 				<div id="entry" class="thumbnail">
 <!--
