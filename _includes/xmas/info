@@ -3,7 +3,7 @@
 	{% include adsense %}
 	{% include pnavi %}
 		<div class="row">
-			<b class="bg-primary">{{page.title}}</b>
+			<a href="#" class="btn btn-primary">{{page.title}}</a>
 			<div id="entry" class="thumbnail">
 			{{content}}
 			{% if (page.tags) %}<p>{% for tag in page.tags%}<i class="glyphicon glyphicon-tags"></i>&nbsp;<span><a href="{{site.baseurl}}/tag#{{tag}}">{{tag}}</a></span>{% endfor %}</p>{% endif %}
@@ -19,7 +19,7 @@
 				{% if (page.tags) %}
 					<ul class="nav nav-pills nav-stacked">
 				{% for tag in page.tags %}
-					<li class="active"><a href="{{site.baseurl}}/tag#{{tag}}">{{site.lang.postbytag}}{{tag}}</a><i class="badge">{{tag|size}}</i></li>
+					<li class="active"><a href="{{site.baseurl}}/tag#{{tag}}">{{site.lang.postbytag}}{{tag}}<i class="badge pull-right">{{tag|size}}</i></a></li>
 				{% for p in site.tags[tag] limit:10 %}<li><a href="{{site.baseurl}}{{p.url}}">{{p.title}}</a></li>{% endfor %}
 				{% endfor %}
 				{% endif %}
