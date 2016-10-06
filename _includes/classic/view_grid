@@ -13,6 +13,7 @@
 		<b>{{post.title}}</b>
 		<br>
 {% include postcat %}
-{% include readmore %}		
+{{post.content|truncatewords:100}}
+<a href="{{site.baseurl}}{{post.url}}">{{site.lang.read_more}}</a>	
 	</div>
 </div>
