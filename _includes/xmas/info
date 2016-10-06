@@ -3,7 +3,7 @@
 	{% include adsense %}
 	{% include pnavi %}
 		<div class="row">
-			<a href="#" class="btn btn-primary">{{page.title}}</a>
+			<div class="bg-warning"><a href="#" class="btn btn-link">{{page.title}}</a></div>
 			<div id="entry" class="thumbnail">
 			{{content}}
 			{% if (page.tags) %}<p>{% for tag in page.tags%}<i class="glyphicon glyphicon-tags"></i>&nbsp;<span><a href="{{site.baseurl}}/tag#{{tag}}">{{tag}}</a></span>{% endfor %}</p>{% endif %}
