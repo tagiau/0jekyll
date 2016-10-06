@@ -4,6 +4,7 @@ title: Markdown syntag
 tags: ["Label"]
 thumb: http://placehold.it/100x100
 ---
+Đây là cụm từ để xem trước. 10 từ để xem trước
 <pre>
 Markdown Syntax Guide
 =====================
