@@ -29,6 +29,7 @@
 						<img src="https://placehold.it/300x200" class="img-responsive" />
 					</div></div>
 				</div>
+			{% include adsense %}
 			</div><!-- #sidebar -->
 {% include pagi %}
 </div></div><!-- .container-fulid -->
