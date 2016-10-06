@@ -1,6 +1,6 @@
 # Site settings
 baseurl: "/0jekyll"
-asseturl: "/assets"
+asseturl: "/0jekyll/assets"
 name: "0jekyll"
 skin: "xmas"
 lang:
