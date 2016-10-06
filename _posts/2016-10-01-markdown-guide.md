@@ -5,6 +5,7 @@ tags: ["Label"]
 thumb: http://placehold.it/100x100
 ---
 simple content là cụm từ để xem trước. 10 từ để xem trước
+20 từ để xem trước 20 từ để xem trước20 từ để xem trước 20 từ để xem trước
 <h4>Emphasis</h4>
 <pre>**<strong>bold</strong>**
 *<em>italics</em>*

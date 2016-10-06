@@ -4,7 +4,8 @@ title: post form github
 tags: ["Label"]
 thumb: post-form-github
 ---
-Đây là bài gửi được viết từ github new file. 10 từ để xem trước
+Đây là bài gửi được viết từ github new file. 20 từ để xem trước
+20 từ để xem trước 20 từ để xem trước
 
 ## Phần nội dung
 - list kiểu markdown
