@@ -5,7 +5,7 @@ tags: ["Label"]
 thumb: http://placehold.it/100x100
 ---
 Nội dung tóm lược xem trước ở đây. Tốt nhất là hơn 22 từ trước khi thêm các thẻ html hoặc kiểu markdown
-{% highlight %}
+```
 Markdown Syntax Guide
 =====================
 This is an overview of Markdown's syntax.  For more information, visit the [Markdown web site].
@@ -185,4 +185,4 @@ You can make inline `<code>` tags by using code spans.  Use backticks to make a 
 Like code blocks, code spans will be displayed in a monospaced typeface.  Markdown and HTML will not work within them:
  Markdown italicizes things like this: `I *love* it.`
  Don't use the `<font>` tag; use CSS instead.
-{% endhighlight %}
+```
