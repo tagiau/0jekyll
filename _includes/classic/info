@@ -4,14 +4,6 @@
 	{% include pnavi %}
 		<div class="row">
 			<div id="entry" class="thumbnail">
-			<!--
-			{% if (page.thumb) %}{% assign x = page.thumb|slice:0,4 %}{% if x == "http" %}
-			<img src="{{page.thumb}}" alt="{{page.title}}" class="pull-right img-thumbnail"/>
-			{% else %}
-			<img src="{{site.asseturl}}{{page.id}}/0.jpg" alt="{{page.title}}" class="pull-right img-thumbnail"/>
-			{% endif %}
-			{% endif %}
-			-->
 			<h3>{{page.title}}</h3>
 			{{content}}
 			{% if (page.tags) %}<p>{% for tag in page.tags%}<i class="glyphicon glyphicon-tags"></i>&nbsp;<span><a href="{{site.baseurl}}/tag#{{tag}}">{{tag}}</a></span>{% endfor %}</p>{% endif %}
