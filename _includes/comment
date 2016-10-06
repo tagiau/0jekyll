@@ -24,7 +24,7 @@ $(function() {
       return false;
     });
 });
-document.write(window.location.href);
+document.getElementById("comments").innerHTML = "Page location is " + window.location.href;
 </script>
 <div class="comments">Comment</div>
 <form id="comment">
