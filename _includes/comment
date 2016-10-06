@@ -3,7 +3,7 @@ function slugify(text){return text.toString().toLowerCase().trim().replace(/&/g,
 $(function() {
   var ref = new Firebase("https://sieutv-comment.firebaseio.com/"),
     postRef = ref.child(slugify(window.location.pathname));
-	//postRef = ref.child(md5(window.location.href));
+
     postRef.on("child_added", function(snapshot) {
       var newPost = snapshot.val();
       $(".comments").prepend('<div class="comment">' +
