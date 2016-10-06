@@ -6,8 +6,21 @@ title: Tags
 <script>
 var a = window.location.hash.split('#')[1];
 if(a){
-document.write('bien:'+a);
-document.write('{% assign x='+a+' %}');
+//document.write('bien:'+a);
+//document.write('{% assign x='+a+' %}');
 }
 </script>
-<br>bien x: {{x}}
+{% for tag in site.tags %}
+	<div id="{{tag|first|remove:' '}}">
+	<h3>{{tag[0]}}<i class="badge">{{tag|last|size}}</i></h3>
+	<ol>
+	{% for posts in tag %}
+		{% for post in posts %}
+			{% if post.url %}
+			<li><a href="{{site.baseurl}}{{post.url}}"><time>{{ post.date | date: "%-d %B %Y" }}</time> - {{ post.title }}</a></li>
+			{% endif %}
+		{% endfor %}
+	{% endfor %}
+	</ol>
+	</div>
+{% endfor %}
