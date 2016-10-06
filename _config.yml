@@ -9,6 +9,6 @@ lang:
 # Build settings
 markdown: redcarpet
 permalink: /:categories/:title
-excerpt_separator: \n\n
+excerpt_separator: <!-- more -->
 paginate: 12
 paginate_path: /page:num
