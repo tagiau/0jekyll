@@ -1,5 +1,5 @@
 <div id="item" class="col-sm-6 col-md-4">
-	<div class="row">
+	<div class="row bg-info">
 		{% if (post.thumb) %}
 		<a href="{{site.baseurl}}{{post.url}}">
 		{% assign x = post.thumb|slice:0,4 %}

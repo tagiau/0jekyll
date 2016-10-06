@@ -1,4 +1,4 @@
-<div class="container-fluid"><div class="row">
+<div class="container-fluid"><div class="row bg-info">
 	<div id="main" class="col-md-9 col-lg-8">
 	{% include adsense %}
 	{% include pnavi %}
