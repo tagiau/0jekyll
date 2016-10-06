@@ -4,8 +4,8 @@ title: Tags
 ---
 post by tag: 
 <script>
-var x = window.location.pathname.split('#');
+var x = window.location.pathname.split('/');
 if(x){
-	document.write(x);
+	document.write(x[0]);
 }
 </script>
