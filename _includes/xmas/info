@@ -4,7 +4,7 @@
 	{% include pnavi %}
 		<div class="row">
 			<div id="entry" class="thumbnail">
-			<b>{{page.title}}</b>
+			<h3>{{page.title}}</h3>
 			{{content}}
 			{% if (page.tags) %}<p>{% for tag in page.tags%}<i class="glyphicon glyphicon-tags"></i>&nbsp;<span><a href="{{site.baseurl}}/tag#{{tag}}">{{tag}}</a></span>{% endfor %}</p>{% endif %}
 			{% include comment %}
