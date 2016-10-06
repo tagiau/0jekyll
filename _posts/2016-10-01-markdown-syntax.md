@@ -7,7 +7,7 @@ thumb: http://placehold.it/100x100
 <pre>
 Markdown Syntax Guide
 =====================
-<!-- more -->
+
 This is an overview of Markdown's syntax.  For more information, visit the [Markdown web site].
  [Markdown web site]:
    http://daringfireball.net/projects/markdown/

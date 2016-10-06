@@ -13,7 +13,6 @@
 		<b>{{post.title}}</b>
 		<br>
 {% include postcat %}
-		{{post.excerpt|strip_html}}
-		<a href="{{site.baseurl}}{{post.url}}">{{site.lang.read_more}}</a>
+{% include readmore %}		
 	</div>
 </div>

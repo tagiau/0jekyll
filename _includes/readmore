@@ -1,0 +1,11 @@
+{% capture content_words %}
+  {{ post.content | number_of_words }}
+{% endcapture %}
+
+{% capture excerpt_words %}
+  {{ post.content | truncatewords: 250 | number_of_words }}
+{% endcapture %}
+
+{% if content_words != excerpt_words  %}
+<a href="{{site.baseurl}}{{post.url}}">{{site.lang.read_more}}</a>
+{% endif %}
