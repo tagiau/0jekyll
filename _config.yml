@@ -4,7 +4,7 @@ asseturl: "/assets"
 name: "0jekyll"
 skin: "classic"
 lang:
- read_more: "...>>"
+ read_more: ">more>"
 
 # Build settings
 markdown: redcarpet
