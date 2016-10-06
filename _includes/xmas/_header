@@ -1,0 +1,22 @@
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="vitinhkk, binhbat">
+	<link href="apple-touch-icon.png" rel="apple-touch-icon">
+	<link href="favicon.ico" rel="icon">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="https://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+	<link href="https://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+	<title>{{page.title}}</title>
+	<style>
+		img{display:block;margin:0 auto;max-width:100%;}
+		#item{height:150px;overflow-y:auto;}
+	</style>
+</head>
+<body>
+	<header>
+	{% include navi %}
+	</header>

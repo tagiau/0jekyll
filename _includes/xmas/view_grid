@@ -1,0 +1,17 @@
+<div id="item" class="col-sm-6 col-md-4">
+	<div class="row">
+		{% if (post.thumb) %}
+		<a href="{{site.baseurl}}{{post.url}}">
+		{% assign x = post.thumb|slice:0,4 %}
+		{% if x == "http" %}
+		<img src="{{post.thumb}}" alt="{{post.title}}" width="100px" class="pull-left img-thumbnail"/>
+		{% else %}
+		<img src="{{site.asseturl}}/{{post.thumb}}" alt="{{post.title}}" width="100px" class="pull-left img-thumbnail"/>
+		{% endif %}
+		</a>
+		{% endif %}
+		<b>{{post.title}}</b><br>
+		{% include postcat %}
+		{{post.content|truncatewords:22}}<a href="{{site.baseurl}}{{post.url}}">{{site.lang.read_more}}</a>	
+	</div>
+</div>

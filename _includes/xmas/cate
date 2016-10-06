@@ -1,0 +1,35 @@
+<div class="container-fluid"><div class="row">
+	<div id="main" class="col-md-9 col-lg-8">
+	{% include adsense %}
+		<div class="row">
+		{% for post in site.categories[c] %}
+		{% include {{site.skin}}/view_grid %}
+		{% endfor %}
+		</div>
+	</div><!-- #main -->
+	<div id="sidebar" class="col-md-3 col-lg-4">
+		<div class="row">
+			<div class="col-lg-6">
+			{% include adsense %}
+				<div class="row">
+				{% for post in site.categories[c] %}
+					{% assign currentdate = post.date | date: "%Y" %}
+					{% if currentdate != date %}
+						{% unless forloop.first %}</ul>{% endunless %}
+						<b>{{currentdate}}</b>
+						<ul class="nav nav-pills nav-stacked">
+						{% assign date = currentdate %}
+					{% endif %}
+					<li><a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a></li>
+					{% if forloop.last %}</ul>{% endif %}
+				{% endfor %}
+				</div>
+			</div>
+			<div class="col-lg-6 hidden-xs">
+				<div class="row">
+				<img src="https://placehold.it/300x200" class="img-responsive" />
+				</div>
+			</div>
+		</div>
+	</div><!-- #sidebar -->
+</div></div><!-- .container-fulid -->
