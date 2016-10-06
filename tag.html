@@ -2,10 +2,8 @@
 layout: page
 title: Tags
 ---
-post by tag: 
+
 <script>
-var x = window.location.pathname.split('/');
-if(x){
-	document.write(x[0]);
-}
+var a=window.location.hash.split('#')[1];
+document.write('post by tag: '+a);
 </script>
