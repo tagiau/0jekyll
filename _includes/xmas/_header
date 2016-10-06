@@ -13,7 +13,7 @@
 	<title>{{page.title}}</title>
 	<style>
 		body{background:url({{site.asseturl}}/skin/{{site.skin}}/img/xmas-bg.jpg) no-repeat center center fixed;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;}
-		footer{bottom:0;color:ff0;}
+		footer{position:absolute;bottom:0;color:#ff0;}
 		img{display:block;margin:0 auto;max-width:100%;}
 		.item{color:#fff;}
 		
