@@ -1,6 +1,6 @@
 <div id="navi">
-<a href="{{site.baseurl}}/home" class="btn btn-danger"><i class="glyphicon glyphicon-home"></i></a>
-{% for nav in site.categories %}
-<a class="btn btn-info" href="{{site.baseurl}}/{{nav[0]}}">{{nav[0]|upcase}}</a>
-{% endfor %}
+	<a href="{{site.baseurl}}/home" class="btn btn-danger"><i class="glyphicon glyphicon-home"></i></a>
+	{% for nav in site.categories %}
+	<a class="btn btn-info" href="{{site.baseurl}}/{{nav[0]}}">{{nav[0]|upcase}}</a>
+	{% endfor %}
 </div>

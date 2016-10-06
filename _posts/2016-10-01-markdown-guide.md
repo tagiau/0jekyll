@@ -2,10 +2,10 @@
 layout: post
 title: Markdown guide
 tags: ["Label"]
-thumb: http://placehold.it/100x100
+thumb: http://placehold.it/150x150
 ---
-simple content là cụm từ để xem trước. 10 từ để xem trước
-20 từ để xem trước 20 từ để xem trước20 từ để xem trước 20 từ để xem trước
+Nội dung tóm lược xem trước ở đây. Tốt nhất là hơn 22 từ trước khi thêm các thẻ html hoặc kiểu markdown
+
 <h4>Emphasis</h4>
 <pre>**<strong>bold</strong>**
 *<em>italics</em>*
