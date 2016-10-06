@@ -1,9 +1,9 @@
 {% capture content_words %}
-  {{ post.content | number_of_words }}
+  {{ post.content | 100 }}
 {% endcapture %}
 
 {% capture excerpt_words %}
-  {{ post.content | truncatewords: 250 | number_of_words }}
+  {{ post.content | truncatewords: 250 | 100 }}
 {% endcapture %}
 
 {% if content_words != excerpt_words  %}

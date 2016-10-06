@@ -5,7 +5,6 @@ tags: ["Label"]
 thumb: http://placehold.it/100x100
 ---
 simple content 
-
 <h4>Emphasis</h4>
 <pre>**<strong>bold</strong>**
 *<em>italics</em>*
