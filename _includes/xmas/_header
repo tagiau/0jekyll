@@ -16,7 +16,7 @@
   -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;
   }
 		img{display:block;margin:0 auto;max-width:100%;}
-		#item{height:150px;overflow-y:auto;}
+		.item{color:#fff;xheight:150px;overflow-y:auto;}
 	</style>
 </head>
 <body>
