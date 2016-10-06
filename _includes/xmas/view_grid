@@ -12,6 +12,6 @@
 		{% endif %}
 		<div><i class="glyphicon glyphicon-play"></i><b>{{post.title}}</b></div>
 		<div>{% include postcat %}</div>
-		<div>{{post.content|truncatewords:22}}<a href="{{site.baseurl}}{{post.url}}">{{site.lang.read_more}}</a></div>
+		{{post.content|truncatewords:22}}<a href="{{site.baseurl}}{{post.url}}">{{site.lang.read_more}}</a>
 	</div>
 </div>
