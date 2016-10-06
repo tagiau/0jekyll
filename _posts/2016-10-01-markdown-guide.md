@@ -4,7 +4,8 @@ title: Markdown guide
 tags: ["Label"]
 thumb: http://placehold.it/100x100
 ---
-simple content <!--more-->
+simple content 
+\n\n
 <h4>Emphasis</h4>
 <pre>**<strong>bold</strong>**
 *<em>italics</em>*

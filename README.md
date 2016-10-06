@@ -1,5 +1,7 @@
 Đây là code mẩu dùng làm trang cá nhân.
-<!--more-->
+
+
+
 ### option
 * Thuần jekyll. Không có dùng plugin
 * Có hổ trợ comment. more include/classic/comment
