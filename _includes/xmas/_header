@@ -12,7 +12,7 @@
 	<link href="https://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
 	<title>{{page.title}}</title>
 	<style>
-		body{background: url({{site.baseurl}}/{{site.skin}}/img/xmas-bg.jpg) center center no-repeat;}
+		body{background: url({{site.asseturl}}/{{site.skin}}/img/xmas-bg.jpg) center center no-repeat;}
 		img{display:block;margin:0 auto;max-width:100%;}
 		#item{height:150px;overflow-y:auto;}
 	</style>
