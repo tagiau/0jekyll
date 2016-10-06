@@ -1,4 +1,4 @@
-<div id="item" class="col-sm-6 col-md-4">
+<div class="item" class="col-sm-6 col-md-4">
 	<div class="row">
 		{% if (post.thumb) %}
 		<a href="{{site.baseurl}}{{post.url}}">
@@ -10,8 +10,8 @@
 		{% endif %}
 		</a>
 		{% endif %}
-		<div class="bg-primary"><b>{{post.title}}</b></div>
-		{% include postcat %}
-		{{post.content|truncatewords:22}}<a href="{{site.baseurl}}{{post.url}}">{{site.lang.read_more}}</a>	
+		<div><i class="glyphicon glyphicon-play"></i><b>{{post.title}}</b></div>
+		<div>{% include postcat %}</div>
+		<div>{{post.content|truncatewords:25}}<a href="{{site.baseurl}}{{post.url}}">{{site.lang.read_more}}</a></div>
 	</div>
 </div>

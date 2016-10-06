@@ -19,7 +19,7 @@
 				{% if (page.tags) %}
 					<ul class="nav nav-pills nav-stacked">
 				{% for tag in page.tags %}
-					<li class="active"><a href="{{site.baseurl}}/tag#{{tag}}">{{site.lang.postbytag}}{{tag}}<i class="badge pull-right">{{tag|size}}</i></a></li>
+					<li class="active"><a href="{{site.baseurl}}/tag#{{tag}}">{{site.lang.postbytag}}{{tag}}<i class="badge pull-right">{{tag|last|size}}</i></a></li>
 				{% for p in site.tags[tag] limit:10 %}<li><a href="{{site.baseurl}}{{p.url}}">{{p.title}}</a></li>{% endfor %}
 				{% endfor %}
 				{% endif %}
