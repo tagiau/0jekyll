@@ -24,6 +24,7 @@ $(function() {
       return false;
     });
 });
+alert(slugify(window.location.href));
 </script>
 <div class="comments">Comment</div>
 <form id="comment">
