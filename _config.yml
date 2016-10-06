@@ -5,6 +5,7 @@ name: "0jekyll"
 skin: "classic"
 lang:
  read_more: ">more>"
+ postbytag: "10 bài có thẻ:"
 
 # Build settings
 markdown: redcarpet
