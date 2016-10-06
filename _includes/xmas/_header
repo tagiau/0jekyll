@@ -17,6 +17,6 @@
 	</style>
 </head>
 <body>
-	<header>
+	<header class="bg-primary">
 	{% include navi %}
 	</header>
