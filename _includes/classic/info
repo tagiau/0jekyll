@@ -14,7 +14,7 @@
 			-->
 			<h3>{{page.title}}</h3>
 			{{content}}
-			{% if (page.tags) %}<p>{% for tag in page.tags%}<i class="glyphicon glyphicon-tags"></i>&nbsp;<span>{{tag}}</span>{% endfor %}</p>{% endif %}
+			{% if (page.tags) %}<p>{% for tag in page.tags%}<i class="glyphicon glyphicon-tags"></i>&nbsp;<span><a href="{{site.baseurl}}/tag#{{tag}}">{{tag}}<a></span>{% endfor %}</p>{% endif %}
 			{% include comment %}
 			</div>
 		</div>
