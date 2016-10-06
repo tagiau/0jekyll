@@ -4,14 +4,16 @@
 		{% include adsense %}
 			<div class="row">
 				<div class="thumbnail">
+<!--
 	{% if (page.thumb) %}{% assign x = page.thumb|slice:0,4 %}{% if x == "http" %}
 		<img src="{{page.thumb}}" alt="{{page.title}}" class="pull-right img-thumbnail"/>
 		{% else %}
 		<img src="{{site.asseturl}}{{page.id}}/0.jpg" alt="{{page.title}}" class="pull-right img-thumbnail"/>
 		{% endif %}
 	{% endif %}
+-->
 				<b>{{page.title}}</b>
-					{{content}}
+					{{content|markdownify}}
 		{% if (page.tags) %}<p>{% for tag in page.tags%}<i class="glyphicon glyphicon-tags"></i>&nbsp;<span>{{tag}}</span>{% endfor %}</p>{% endif %}
 		{% include comment %}
 				</div>
