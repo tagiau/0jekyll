@@ -1,5 +1,5 @@
 <div class="container"><div class="row">
-	<div class="col-md-3">
+	<div class="col-md-2">
 		<div class="row">
 		{% for post in site.posts %}
 			{% assign currentdate = post.date | date: "%Y" %}
@@ -14,7 +14,7 @@
 		{% endfor %}
 		</div>
 	</div>
-	<div id="main" class="col-md-6">
+	<div id="main" class="col-md-8">
 	{% include adsense %}
 		<div class="row">
 		{% for post in site.posts %}
@@ -22,7 +22,7 @@
 		{% endfor %}
 		</div>
 	</div><!-- #main -->
-	<div class="col-md-3">
+	<div class="col-md-2">
 		{% include adsense %}
 	</div>
 </div></div><!-- .container-fulid -->

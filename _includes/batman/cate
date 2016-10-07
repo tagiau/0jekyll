@@ -1,5 +1,5 @@
 <div class="container-fluid"><div class="row">
-	<div class="col-md-3">
+	<div class="col-md-2">
 		{% include adsense %}
 		<div class="row">
 		{% for post in site.categories[c] %}
@@ -15,7 +15,7 @@
 		{% endfor %}
 		</div>
 	</div>
-	<div id="main" class="col-md-6">
+	<div id="main" class="col-md-8">
 	{% include adsense %}
 		<div class="row">
 		{% for post in site.categories[c] %}
@@ -23,8 +23,8 @@
 		{% endfor %}
 		</div>
 	</div><!-- #main -->
-	<div class="col-md-3">
+	<div class="col-md-2">
 		{% include adsense %}
 	</div>
-	<div id="sidebar" class="col-md-3 col-lg-4">
+	<div id="sidebar" class="col-md-2 col-lg-4">
 </div></div><!-- .container-fulid -->

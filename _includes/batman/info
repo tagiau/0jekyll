@@ -1,5 +1,5 @@
 <div class="container-fluid">{% include pnavi %}<div class="row">
-	<div class="col-md-3">
+	<div class="col-md-2">
 		{% include adsense %}
 		<div class="row">
 		{% if (page.tags) %}
@@ -11,7 +11,7 @@
 		{% endif %}
 		</div>
 	</div>
-	<div id="main" class="col-md-6">
+	<div id="main" class="col-md-8">
 	{% include adsense %}
 		<div class="row">
 			<div id="entry" class="thumbnail">
@@ -22,7 +22,7 @@
 			</div>
 		</div>
 	</div><!-- .main -->
-	<div class="col-md-3">
+	<div class="col-md-2">
 		{% include adsense %}
 	</div>
 </div></div><!-- .container-fulid -->
