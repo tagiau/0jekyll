@@ -1,6 +1,5 @@
 <div id="navi">
 	<a href="{{site.baseurl}}/home" class="btn btn-danger"><i class="glyphicon glyphicon-home"></i></a>
-	<a href="http://www.ctrlshift.net/project/markdowneditor/?blank=1" class="btn btn-success" target="_blank"><i class="glyphicon glyphicon-pencil"></i></a>
 	{% for nav in site.categories %}
 	<a class="btn btn-info" href="{{site.baseurl}}/{{nav[0]}}">{{nav[0]|upcase}}</a>
 	{% endfor %}
