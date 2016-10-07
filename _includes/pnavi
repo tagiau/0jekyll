@@ -1,4 +1,4 @@
-<div class="pull-left">
+<div class="row">
 {% if page.previous.url %}
     <a class="pull-left btn btn-link" href="{{site.baseurl}}{{page.previous.url}}">&laquo; {{page.previous.title}}</a>
   {% endif %}
