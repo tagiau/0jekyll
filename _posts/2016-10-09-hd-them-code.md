@@ -21,19 +21,23 @@ Lệnh git thường dùng: sài riết wen ah
 Mình sai cái app nên sài giao diện.
 
 ### dzo bước 2
-- Tải project 0jekyll về.
+Tải project 0jekyll về.
 > git clone https://github.com/tagiau/0jekyll
-- Tải project của bạn về.
+
+Tải project của bạn về.
 > git clone https://github.com/username/gido
 ![hinh]({{site.asseturl}}/hd-them-code/1.png)
-- copy hết file trong 0jekyll qua project của bạn (xóa hết rồi copy củng đc)
-- Giờ làm việc với project của bạn. Sửa file _config.yml đổi cho giống tên project bạn
+copy hết file trong 0jekyll qua project của bạn (xóa hết rồi copy củng đc)
+
+Giờ làm việc với project của bạn. Sửa file _config.yml đổi cho giống tên project bạn
 ![hinh]({{site.asseturl}}/hd-them-code/2.png)
-- Tiếp thêm file dùng "git add ." > git commit -am "gido" . hình bằng app
+
+Tiếp thêm file dùng "git add ." > git commit -am "gido" . hình bằng app
 ![hinh]({{site.asseturl}}/hd-them-code/3.png)
 ![hinh]({{site.asseturl}}/hd-them-code/4.png)
 ![hinh]({{site.asseturl}}/hd-them-code/5.png)
-- Tiếp đẩy lên github dùng "git push" nó sẽ hỏi user,pass > cứ nhập từ từ mà đúng dù nó hiện ****
+
+Tiếp đẩy lên github dùng "git push" nó sẽ hỏi user,pass > cứ nhập từ từ mà đúng dù nó hiện ****
 ![hinh]({{site.asseturl}}/hd-them-code/6.png)
 ![hinh]({{site.asseturl}}/hd-them-code/7.png)
 ![hinh]({{site.asseturl}}/hd-them-code/8.png)
