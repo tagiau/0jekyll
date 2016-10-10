@@ -5,13 +5,14 @@ tags: ["Cài đặt"]
 thumb: hd-them-code/0.jpg
 ---
 Sau khi hoàn tất bước 1, ta truy cập được vào trang web, cái đường dẫn dài dài *.github.io/tenlagi
-mình sẽ hướng đẫn gắn domain sau.
+, mình sẽ hướng đẫn gắn domain sau.
 
 Giờ tới bước thêm code 0jekyl. vì mình viết trên đt android nên hình chụp hơi khác.
 app aide web. chplay để cài nhé
 Trên window thì sài cái [chương trình này](https://git-scm.com/download/win)
 
 Lệnh git thường dùng: sài riết wen ah
+
 - git clone : tải 1 project về (dùng ít)
 - git pull : đồng bộ 
 - git add . : thêm file để commit, push
@@ -21,6 +22,7 @@ Lệnh git thường dùng: sài riết wen ah
 Mình sai cái app nên sài giao diện.
 
 ### dzo bước 2
+
 Tải project 0jekyll về.
 > git clone https://github.com/tagiau/0jekyll
 
