@@ -27,11 +27,8 @@
 				</div>
 			</div>
 			<div class="col-lg-6 hidden-xs">
-				<div class="row">
-				<!-- -->
-				</div>
+				{% include adsense %}
 			</div>
 		</div>
-	{% include adsense %}
 	</div><!-- #sidebar -->
 </div></div><!-- .container-fulid -->
