@@ -18,5 +18,5 @@
 </head>
 <body>
 	<header>
-	{% include navc %}
+	
 	</header>

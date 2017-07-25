@@ -1,0 +1,9 @@
+<a href="{{site.url}}" class="btn btn-danger"><i class="glyphicon glyphicon-home"></i></a>
+{% for nav in site.categories %}
+<!--a href="{{site.baseurl}}/{{nav[0]}}">
+<img src="{{site.baseurl}}/{{nav[0]}}/name.png" alt="{{nav[0]}}"/>
+</a-->
+<button class="btn btn-default">
+     <img src="{{site.baseurl}}/{{nav[0]}}/name.png" />
+</button>
+{% endfor %}

@@ -1,0 +1,4 @@
+---
+layout: page
+---
+{% include {{site.skin}}/view_post %}

@@ -1,6 +1,0 @@
-<div class="navbar-fixed-bottom">
-	<a href="{{site.baseurl}}/home" class="btn btn-danger"><i class="glyphicon glyphicon-home"></i></a>
-	<a href="http://www.ctrlshift.net/project/markdowneditor/?blank=1" class="btn btn-success" target="_blank"><i class="glyphicon glyphicon-pencil"></i></a>
-	<a class="btn btn-warning" href="{{site.baseurl}}{{page.previous.url}}"><i class="glyphicon glyphicon-backward"></i></a>
-	<a class="btn btn-warning" href="{{site.baseurl}}{{page.next.url}}"><i class="glyphicon glyphicon-forward"></i></a>
-</div>

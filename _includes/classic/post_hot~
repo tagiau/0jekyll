@@ -1,0 +1,7 @@
+<h4>{{site.lang.hotpost}}</h4>
+{% for post in site.tags.ghim limit:3 %}
+<div class="img-thumbnail">
+<h4><a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a></h4>
+{% include postthumb %}
+</div>
+{% endfor %}	

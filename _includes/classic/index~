@@ -21,6 +21,7 @@
 					<div class="col-xs-6">
 				<div class="row">
 {% include post_year %}
+<center class="hidden-sm hidden-md"><img src="https://placehold.it/180x150"/></center>
 				</div>
 					</div>
 					<div class="col-xs-12">

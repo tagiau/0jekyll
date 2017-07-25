@@ -1,14 +1,19 @@
 # Site settings
-baseurl: "/0jekyll"
+baseurl: "/0jekyll" #/0jekyll
 asseturl: "/0jekyll/assets"
 name: "0jekyll"
-skin: "batman"
+skin: "classic"
 lang:
- read_more: ">more>"
- postbytag: "Top10: "
-
+ read_more: ">>"
+ samecat: "Cùng mục"
+ sametag: "Cùng thẻ"
+ hotpost: "Bài nổi bật"
+ subcat: "Chuyên mục" # name of sub folder
 # Build settings
-markdown: redcarpet
+markdown: kramdown
 permalink: /:categories/:title
-paginate: 12
+paginate: 6
 paginate_path: /page:num
+
+plugins: 
+ - jekyll-paginate
