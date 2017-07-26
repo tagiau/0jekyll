@@ -1,0 +1,45 @@
+<main>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-12 col-sm-6 col-md-8">
+{% include navp %}
+		<div class="row">
+{% include {{site.skin}}/160x600 %}
+			<div id="entry" class="thumbnail">
+			<h3>{{page.title}}</h3>
+	{{content}}
+	{% if (page.tags) %}
+		<p>{% for tag in page.tags%}<i class="glyphicon glyphicon-tags"></i>&nbsp;<span><a href="{{site.baseurl}}tag/#{{tag}}">{{tag}}</a></span>{% endfor %}</p>
+	{% endif %}
+{% include {{site.skin}}/728x90 %}
+{% include comment %}
+			</div>
+		</div>
+			</div> <!--cot trai-->
+			<div class="col-xs-12 col-sm-6 col-md-4">
+{% include search %}
+				<div class="row">
+					<div class="col-xs-6">
+				<div class="row">
+{% include post_hot %}
+				</div>
+					</div>
+					<div class="col-xs-6">
+						<div class="row">
+{% include {{site.skin}}/200x200 %}
+{% include sitetags %}
+{% include postincat %}
+{% include postintag %}
+{% include {{site.skin}}/180x150 %}
+						</div>
+					</div>
+					<div class="col-xs-12">
+						<div class="row">
+{% include {{site.skin}}/336x280 %}
+						</div>
+					</div>
+    			</div>
+			</div><!--cot phai-->
+		</div>
+	</div>
+</main>

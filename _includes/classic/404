@@ -2,11 +2,12 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-xs-12 col-sm-6 col-md-8">
-		{% for post in paginator.posts %}
-		  {% include {{site.skin}}/post_list %}
-		{% endfor %}
-{% include {{site.skin}}/728x90 %}
-{% include pagi %}
+***lỗi 404***
+<br>
+{{'now' | date: "%s" | minus : 604800 | date: "%b %d, %Y %I:%M %p" | uri_encode | replace:"+","%20"}}
+<br>
+{% assign mySha = 'now'|date:"%s"|minus:604800 %}
+{{mySha}}
 			</div>
 			<div class="col-xs-12 col-sm-6 col-md-4">
 {% include {{site.skin}}/_side %}

@@ -1,3 +1,4 @@
+<div class="row text-center">
 {% if paginator.total_pages > 1 %}
   <ul class="pagination">
   {% if paginator.previous_page %}
@@ -28,3 +29,4 @@
   {% endif %}
   </ul>
 {% endif %}
+</div>

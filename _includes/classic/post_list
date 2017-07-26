@@ -1,0 +1,18 @@
+<div class="row">
+<h4><a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a></h4>
+{% include imgthumb %}
+{{post.content|strip_html|truncate:200}}
+<p>
+{% for cat in post.categories %}
+<span><i class="glyphicon glyphicon-folder-open"></i>
+<a class="btn btn-link" href="{{site.baseurl}}/{{cat}}">{{cat}}</a></span>
+{% endfor %}
+{% for tag in post.tags %}
+<span><i class="glyphicon glyphicon-tag"></i>
+<a class="btn btn-link" href="{{site.baseurl}}tag/#{{tag|replace:' ','-'}}">{{tag}}</a></span>
+{% endfor %}
+</p>
+<p><i class="glyphicon glyphicon-user"></i><span>admin</span>
+<i class="glyphicon glyphicon-time"></i><time>{{post.date|date_to_rfc822}}</time></p>
+</div>
+<hr>

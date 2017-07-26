@@ -2,4 +2,4 @@
 layout: page
 title: Trang Archive
 ---
-{% include {{site.skin}}/index_archive %}
+{% include {{site.skin}}/page_archive %}
