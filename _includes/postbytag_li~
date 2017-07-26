@@ -1,3 +1,0 @@
-{% for post in site.tags[{{include.key}}] limit:{{include.num}} %}
-<li><a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a></li>
-{% endfor %}

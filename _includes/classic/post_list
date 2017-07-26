@@ -9,7 +9,7 @@
 {% endfor %}
 {% for tag in post.tags %}
 <span><i class="glyphicon glyphicon-tag"></i>
-<a class="btn btn-link" href="{{site.baseurl}}tag/#{{tag|replace:' ','-'}}">{{tag}}</a></span>
+<a class="btn btn-link" href="{{site.baseurl}}/tag#{{tag|replace:' ','-'}}">{{tag}}</a></span>
 {% endfor %}
 </p>
 <p><i class="glyphicon glyphicon-user"></i><span>admin</span>

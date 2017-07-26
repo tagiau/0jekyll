@@ -1,6 +1,0 @@
-{% if (post.categories) %}
-{% for cat in post.categories %}
-<i class="glyphicon glyphicon-folder-open">:</i>
-<span><a class="btn btn-link" href="{{site.baseurl}}/{{cat}}">{{cat}}</a></span>
-{% endfor %}
-{% endif %}

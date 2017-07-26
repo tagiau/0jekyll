@@ -1,10 +1,5 @@
 {% if (post.thumb) %}
-	{% assign x = post.thumb|slice:0,4 %}
-	{% if x == "http" %}
-		<img src="{{post.thumb}}" alt="{{post.title}}" class="pull-left img-thumbnail"/>
-	{% else %}
 		<img src="{{site.asseturl}}/{{post.thumb}}" alt="{{post.title}}" class="pull-left img-thumbnail"/>
-	{% endif %}
 {% else %}
       {% assign foundImage = 0 %}
       {% assign images = post.content | split:"<img " %}

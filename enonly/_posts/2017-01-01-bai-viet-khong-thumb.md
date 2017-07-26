@@ -1,8 +1,7 @@
 ---
 layout: post
-title: Hướng dẫn viết bài
+title: Bai viet khong thumb
 tags: [ghim,"Cài đặt"]
-thumb: hd-post/2.png
 ---
 
 Để tạo 1 bài viết bạn hãy tạo 1 file trong thư mục _posts.

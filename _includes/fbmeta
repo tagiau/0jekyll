@@ -1,0 +1,5 @@
+<meta property="og:type" content="article"/>
+<meta property="og:url" content="{{site.url}}{{site.baseurl}}{{page.url}}"/>
+<meta property="og:title" content="{{page.title}}"/>
+<meta property="og:description" content="click vào đây để xem tiếp"/>
+{% if (page.thumb) %}<meta property="og:image" content="{{site.url}}{{site.asseturl}}/{{page.thumb}}"/>{% else %}{% assign foundImage = 0 %}{% assign images = page.content | split:"<img " %}{% for image in images %}{% if image contains 'src' %}{% if foundImage == 0 %}{% assign html = image | split:'g"' | first %}<meta property="og:image" content="{{html|remove:'src="'}}g"/>{% assign foundImage = 1 %}{% endif %}{% endif %}{% endfor %}{% endif %}
