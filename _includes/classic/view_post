@@ -2,19 +2,17 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-xs-12 col-sm-6 col-md-8">
-		{% include navp %}
+{% include navp %}
 		<div class="row">
-				<div class="col-md-3 hidden-xs hidden-sm">
-					<div class="row">
-<center><img src="https://placehold.it/160x600"/></center>
-					</div>
-				</div>
+{% include {{site.skin}}/160x600 %}
 			<div id="entry" class="thumbnail">
 			<h3>{{page.title}}</h3>
-{% include postcat %}
-			{{content}}
-			{% if (page.tags) %}<p>{% for tag in page.tags%}<i class="glyphicon glyphicon-tags"></i>&nbsp;<span><a href="{{site.baseurl}}/tag#{{tag}}">{{tag}}</a></span>{% endfor %}</p>{% endif %}
-			{% include comment %}
+	{{content}}
+	{% if (page.tags) %}
+		<p>{% for tag in page.tags%}<i class="glyphicon glyphicon-tags"></i>&nbsp;<span><a href="{{site.baseurl}}tag/#{{tag}}">{{tag}}</a></span>{% endfor %}</p>
+	{% endif %}
+{% include {{site.skin}}/728x90 %}
+{% include comment %}
 			</div>
 		</div>
 			</div> <!--cot trai-->
@@ -23,32 +21,21 @@
 				<div class="row">
 					<div class="col-xs-6">
 				<div class="row">
-<center class="hidden-xs hidden-sm hidden-md"><img src="https://placehold.it/200x200" class=""/></center>
-{% if (page.tags) %}
-<ul class="nav nav-pills nav-stacked">
-{% for tag in page.tags %}
-{% if tag != "ghim" %}
-<li class="active"><a href="{{site.baseurl}}/tag#{{tag}}">{{site.lang.sametag}}</a></li>
-{% for post in site.tags[tag] limit:5 %}
-<li><a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a></li>
-{% endfor %}
-{% endif %}
-{% endfor %}
-{% endif %}
-
-{% include postbycat num="limit:5" %}
-
+{% include post_hot %}
 				</div>
 					</div>
 					<div class="col-xs-6">
 						<div class="row">
-<h4>Bài nổi bật</h4>
-{% include postbytag key="ghim" num="3" %}		
+{% include {{site.skin}}/200x200 %}
+{% include sitetags %}
+{% include postincat %}
+{% include postintag %}
+{% include {{site.skin}}/180x150 %}
 						</div>
 					</div>
 					<div class="col-xs-12">
 						<div class="row">
-<center class="hidden-xs"><img src="https://placehold.it/336x280" class="img-responsive"/></center>
+{% include {{site.skin}}/336x280 %}
 						</div>
 					</div>
     			</div>

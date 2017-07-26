@@ -1,0 +1,6 @@
+<div class="col-sm-6 img-thumbnail">
+<div class="row">
+<h4><a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a></h4>
+{{post.content|strip_html|truncate:200}}
+</div>
+</div>

@@ -1,6 +1,0 @@
-{% for post in site.tags[{{include.key}}] limit:{{include.num}} %}
-<div class="img-thumbnail">
-<h4><a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a></h4>
-{% include imgthumb %}
-</div>
-{% endfor %}

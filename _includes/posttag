@@ -1,5 +1,0 @@
-{% if (post.tags) %}
-{% for tag in post.tags %}
-<span><a class="btn btn-link" href="{{site.baseurl}}/tag#{{tag}}">{{tag}}</a></span>
-{% endfor %}
-{% endif %}
