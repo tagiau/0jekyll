@@ -1,14 +1,1 @@
-{% for tag in site.tags %}
-<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#{{tag|first|replace:' ','-'}}"><i class="badge">{{tag|last|size}}</i>{{tag[0]}}</button>
-<div id="{{tag|first|replace:' ','-'}}" class="collapse">
-	<ul class="nav nav-pills nav-stacked">
-	{% for posts in tag %}
-		{% for post in posts %}
-			{% if post.url %}
-			<li><a href="{{site.baseurl}}{{post.url}}">{{ post.title }}</a></li>
-			{% endif %}
-		{% endfor %}
-	{% endfor %}
-	</ul>
-</div>
-{% endfor %}
+{% for tag in site.tags %}<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#{{tag|first|replace:' ','-'}}"><i class="badge">{{tag|last|size}}</i>{{tag[0]}}</button><div id="{{tag|first|replace:' ','-'}}" class="collapse"><ul class="nav nav-pills nav-stacked">{% for posts in tag %}{% for post in posts %}{% if post.url %}<li><a href="{{site.baseurl}}{{post.url}}">{{ post.title }}</a></li>{% endif %}{% endfor %}{% endfor %}</ul></div>{% endfor %}

@@ -1,12 +1,5 @@
-{% if (page.tags) %}
-<ul class="nav nav-pills nav-stacked">
-{% for tag in page.tags %}
-	{% if tag != "ghim" %}
-	<li class="active"><a href="{{site.baseurl}}/tag#{{tag|replace:' ','-'}}">{{site.lang.sametag}}: {{tag}}</a></li>
-	{% for post in site.tags[tag] limit:6 %}
-	<li><a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a></li>
-	{% endfor %}
-	{% endif %}
-{% endfor %}
-</ul>
-{% endif %}
+{% if (page.tags) %}{% for tag in page.tags %}{% if tag != "ghim" %}{% for post in site.tags[tag] limit:include.num %}{% if page.id != post.id %}
+	<div class="img-thumbnail">
+		<h4><a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a></h4>{% include imgthumb %}
+	</div>
+{% endif %}{% endfor %}{% endif %}{% endfor %}{% endif %}

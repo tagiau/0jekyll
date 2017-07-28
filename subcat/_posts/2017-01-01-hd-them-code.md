@@ -1,8 +1,9 @@
 ---
 layout: post
 title: Hướng dẫn thêm code
+author: admin
 tags: ["Cài đặt"]
-thumb: hd-them-code/0.jpg
+thumb: http://placehold.it/500x500/jpg
 ---
 Sau khi hoàn tất bước 1, ta truy cập được vào trang web, cái đường dẫn dài dài *.github.io/tenlagi
 , mình sẽ hướng đẫn gắn domain sau.

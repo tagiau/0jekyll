@@ -1,0 +1,7 @@
+---
+layout: page
+title: Show post by author
+---
+{% assign name = page.path|split:'/'|first %}
+{% assign auth = name|split:'.'|first %}
+{% include {{site.skin}}/page_author %}

@@ -1,0 +1,45 @@
+<main>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-12 col-sm-6 col-md-8">
+<div class="row">
+{% include navp %}
+</div>
+		<div class="row">
+{% include {{site.skin}}/160x600 %}
+			<div id="entry" class="thumbnail">
+			<h3>{{page.title}}</h3>
+<p>{% if (page.author) %}<i class="glyphicon glyphicon-user"></i><span><a href="{{site.baseurl}}/{{page.author}}">{{page.author}}</a> </span>{% endif %}<i class="glyphicon glyphicon-time"></i>{{page.date|time_tag}}</p>
+	{{content}}
+{% include {{site.skin}}/728x90 %}
+<!--{% include comment %}-->
+			</div>
+		</div>
+			</div> <!--cot trai-->
+			<div class="col-xs-12 col-sm-6 col-md-4">
+{% include search %}
+				<div class="row">
+					<div class="col-xs-6">
+				<div class="row">
+{% include {{site.skin}}/200x200 %}
+{% include postincat num='12' %}
+{% include postbytag key='ghim' num='12' %}
+				</div>
+					</div>
+					<div class="col-xs-6">
+						<div class="row">
+{% include postintag num='12' %}
+{% include {{site.skin}}/180x150 %}
+						</div>
+					</div>
+					<div class="col-xs-12">
+						<div class="row">
+{% include sitetags %}
+{% include {{site.skin}}/336x280 %}
+						</div>
+					</div>
+    			</div>
+			</div><!--cot phai-->
+		</div>
+	</div>
+</main>

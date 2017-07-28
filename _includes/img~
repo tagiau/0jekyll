@@ -1,0 +1,6 @@
+{% assign x = include.key|slice:0,4 %}
+{% if x == "http" %}
+<img src="{{include.key}}" alt="{{include.alt}}" class="img-thumbnail"/>
+{% else %}
+<img src="{{site.url}}{{site.asseturl}}{{include.key}}" alt="{{include.alt}}" class="img-thumbnail"/>
+{% endif %}
