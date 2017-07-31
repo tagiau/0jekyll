@@ -1,6 +1,6 @@
 # Site settings
-baseurl: "/news" # gh-pages/
-asseturl: "/news/assets"
+baseurl: "/0jekyll" # gh-pages
+asseturl: "/0jekyll/assets"
 skin: "classic"
 lang:
  read_more: ">>"
