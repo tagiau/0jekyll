@@ -2,7 +2,7 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-xs-12 col-sm-6 col-md-8">
-				<div class="row">
+				<div class="row"bstyle="background:transparent url('{{site.url}}{{site.baseurl}}/{{c}}/name.png') no-repeat center center /cover">
 <h3>{{site.lang.showpostby}}{{c|upcase}}</h3>
 {% include {{site.skin}}/728x90 %}
 {% assign data = site.categories[c] %}
