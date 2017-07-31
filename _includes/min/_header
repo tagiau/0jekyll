@@ -1,0 +1,22 @@
+<head>
+	<meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta name="description" content=""/>
+	<meta name="keywords" content=""/>
+	<meta name="author" content="binhbat"/>
+	<link href="{{site.asseturl}}/bootstrap/v3/css/bootstrap.min.css" rel="stylesheet"/>
+	<link href="https://vjs.zencdn.net/5-unsafe/video-js.min.css" rel="stylesheet"/>
+	<link href="https://videojs.com/vendor/videojs-playlist-ui/videojs-playlist-ui.vertical.css" rel="stylesheet"/>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.css" rel="stylesheet"/>
+	<link href="{{site.asseturl}}/favicon.png" rel="icon"/>
+{% include fbmeta %}
+	<title>{{page.title}}</title>
+	<style>
+		img{display:block;margin:0 auto;max-width:75%;}
+		.navcat{display:inline-block;max-height:34px;}
+		.max180w{max-width:180px;}
+	</style>
+</head>
+<body>
+	<header>{% include navc %}</header>

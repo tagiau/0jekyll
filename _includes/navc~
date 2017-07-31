@@ -1,4 +1,0 @@
-<a href="{{site.baseurl}}/" class="btn btn-danger"><i class="glyphicon glyphicon-home"></i></a>
-{% for nav in site.categories %}
-<a href="{{site.baseurl}}/{{nav[0]}}"><img class="navcat" src="{{site.baseurl}}/{{nav[0]}}/name.png" alt="{{nav[0]}}"/></a>
-{% endfor %}

@@ -4,7 +4,7 @@
 			<div class="col-xs-12 col-sm-6 col-md-8">
 			<div class="row">
 {% include {{site.skin}}/728x90 %}
-				<div class="img-thumbnail">
+				<div class="thumbnail">
             <ul>
                 {% assign currentYear = site.time | date: "%Y" %}
                 {% assign currentMonth = site.time | date: "%B" %}

@@ -3,7 +3,8 @@
 					<div class="col-xs-6">
 						<div class="row">
 {% include {{site.skin}}/200x200 %}
-{% include postbytag key='ghim' num='12' %}
+{% include postbytag key='ghim' num='10' %}
+{% include postbycat key='me' num='10' %}
 						</div>
 					</div>
 					<div class="col-xs-6">

@@ -1,0 +1,22 @@
+{% include search %}
+			<div class="row">
+					<div class="col-xs-6">
+						<div class="row">
+{% include {{site.skin}}/200x200 %}
+{% include postbytag key='ghim' num='10' %}
+{% include postbycat key='subcat' num='10' %}
+						</div>
+					</div>
+					<div class="col-xs-6">
+				<div class="row">
+{% include post_year num= '24' %}
+{% include {{site.skin}}/180x150 %}
+				</div>
+					</div>
+					<div class="col-xs-12">
+						<div class="row">
+{% include sitetags %}
+{% include {{site.skin}}/336x280 %}
+						</div>
+					</div>
+    			</div>

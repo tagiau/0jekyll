@@ -1,11 +1,12 @@
 # Site settings
-baseurl: "/0jekyll" # gh-pages/
-asseturl: "/0jekyll/assets"
+baseurl: "/news" # gh-pages/
+asseturl: "/news/assets"
 skin: "classic"
 lang:
  read_more: ">>"
+ showpostby: "Bài cùng mục: "
  samecat: "Xem thêm cùng mục"
- sametag: "Cùng thẻ"
+ sametag: "Xem thêm cùng thẻ"
  hotpost: "Bài nổi bật"
  subcat: "Chuyên mục" # name of sub folder
 # Build settings
@@ -14,5 +15,4 @@ permalink: /:categories/:title
 paginate: 10
 paginate_path: /page:num
 
-plugins: 
- - jekyll-paginate
+gems: [jekyll-paginate]

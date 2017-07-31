@@ -5,9 +5,10 @@
 	<meta name="description" content=""/>
 	<meta name="keywords" content=""/>
 	<meta name="author" content="binhbat"/>
-	<link href="https://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet"/>
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.css" rel="stylesheet"/>
 	<link href="{{site.asseturl}}/favicon.png" rel="icon"/>
+	<link href="{{site.asseturl}}/bootstrap/v3/css/bootstrap.min.css" rel="stylesheet"/>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.css" rel="stylesheet"/>
+	<link href="{{site.asseturl}}/skin_{{site.skin}}.css" rel="stylesheet"/>	
 {% include fbmeta %}
 	<title>{{page.title}}</title>
 	<style>

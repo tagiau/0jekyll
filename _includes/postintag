@@ -1,5 +1,1 @@
-{% if (page.tags) %}{% for tag in page.tags %}{% if tag != "ghim" %}{% for post in site.tags[tag] limit:include.num %}{% if page.id != post.id %}
-	<div class="img-thumbnail">
-		<h4><a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a></h4>{% include imgthumb %}
-	</div>
-{% endif %}{% endfor %}{% endif %}{% endfor %}{% endif %}
+{% if (page.tags) %}{% for tag in page.tags %}{% if tag != "ghim" %}{% for post in site.tags[tag] limit:include.num %}{% if page.id != post.id %}<div class="img-thumbnail"><h4><a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a></h4>{% include imgthumb %}</div>{% endif %}{% endfor %}{% endif %}{% endfor %}{% endif %}
