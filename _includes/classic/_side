@@ -1,17 +1,17 @@
-{% include search %}
-			<div class="row">
-					<div class="col-xs-6">
-						<div class="row">
-{% include {{site.skin}}/200x200 %}
-{% include postbytag key='ghim' num='10' %}
-{% include postbycat key='me' num='10' %}
-						</div>
-					</div>
+				<div class="row">
 					<div class="col-xs-6">
 				<div class="row">
-{% include post_year num= '24' %}
-{% include {{site.skin}}/180x150 %}
+{% include {{site.skin}}/200x200 %}
 				</div>
+{% include post_year num='12' %}
+					</div>
+					<div class="col-xs-6">
+						<div class="row">
+<ul class="list-group">
+{% include postintag num='12' %}
+</ul>
+{% include {{site.skin}}/180x150 %}
+						</div>
 					</div>
 					<div class="col-xs-12">
 						<div class="row">
@@ -20,3 +20,4 @@
 						</div>
 					</div>
     			</div>
+

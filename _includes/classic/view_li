@@ -1,0 +1,1 @@
+<li class="list-group-item list-group-item-action"><a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a></li>

@@ -1,1 +1,18 @@
-{% if (page.tags) %}{% for tag in page.tags %}{% if tag != "ghim" %}{% for post in site.tags[tag] limit:include.num %}{% if page.id != post.id %}<div class="img-thumbnail"><h4><a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a></h4>{% include imgthumb %}</div>{% endif %}{% endfor %}{% endif %}{% endfor %}{% endif %}
+{% for tag in page.tags %}
+
+{% for post in site.tags[tag] limit:include.num %}
+	{% if post.id != page.id %}
+			{% if (include.view) %}
+		{% if include.view == "list" %}
+			{% include {{site.skin}}/view_list %}
+		{% endif %}
+		{% if include.view == "grid" %}
+			{% include {{site.skin}}/view_grid %}
+		{% endif %}
+			{% else %}
+				{% include {{site.skin}}/view_li %}
+			{% endif %}
+	{% endif %}
+{% endfor %}
+
+{% endfor %}

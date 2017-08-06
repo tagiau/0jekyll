@@ -7,28 +7,30 @@
 </div>
 		<div class="row">
 {% include {{site.skin}}/160x600 %}
-			<div id="entry" class="thumbnail">
+			<div id="entry" class="col-xs-12 img-thumbnail">
 			<h3>{{page.title}}</h3>
 <p>{% if (page.author) %}<i class="glyphicon glyphicon-user"></i><span><a href="{{site.baseurl}}/{{page.author}}">{{page.author}}</a> </span>{% endif %}<i class="glyphicon glyphicon-time"></i>{{page.date|time_tag}}</p>
 	{{content}}
-{% include {{site.skin}}/728x90 %}
-<!--{% include comment %}-->
 			</div>
+{% include {{site.skin}}/728x90 %}
 		</div>
 			</div> <!--cot trai-->
 			<div class="col-xs-12 col-sm-6 col-md-4">
-{% include search %}
 				<div class="row">
 					<div class="col-xs-6">
 				<div class="row">
 {% include {{site.skin}}/200x200 %}
+<ul class="list-group">
 {% include postincat num='12' %}
+</ul>
 {% include postbytag key='ghim' num='12' %}
 				</div>
 					</div>
 					<div class="col-xs-6">
 						<div class="row">
+<ul class="list-group">
 {% include postintag num='12' %}
+</ul>
 {% include {{site.skin}}/180x150 %}
 						</div>
 					</div>

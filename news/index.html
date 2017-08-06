@@ -1,0 +1,8 @@
+---
+layout: page
+title: Post by category
+thumb: logo.png
+tags: [ghim]
+---
+{% assign c = page.path|split:'/'|first %}
+{% include {{site.skin}}/page_cat %}

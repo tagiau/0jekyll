@@ -1,0 +1,47 @@
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-6 col-md-8" id="main">
+<div class="row">
+{% include carousel key='assets/items' url='items' %}
+</div>
+			</div>
+			<div class="col-sm-6 col-md-4" id="side">
+				<div class="row">
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/u4Y6Bp55szQ"></iframe>
+</div>
+				<div class="col-6 hidden-sm-down">
+<div class="row">
+<div class="img-thumbnail bg-warning">
+	<img src="http://lorempixel.com/200/200/nature/6" class="img-fluid rounded" alt=""/>
+	<a href="{{site.baseurl}}/tag" class="text-white"><b>Tag pages</b></a>
+</div>
+</div>
+				</div>
+
+				<div class="col-6 hidden-sm-down">
+<div class="row">
+<div class="img-thumbnail bg-warning">
+	<img src="http://lorempixel.com/200/200/nature/8" class="img-fluid rounded" alt=""/>
+	<a href="{{site.baseurl}}/archive" class="text-white"><b>Archive pages</b></a>
+</div>	
+</div>
+				</div>
+
+          </div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="container-fluid">
+<div class="row">
+		{% for post in paginator.posts %}
+		  {% include {{site.skin}}/view_grid %}
+		{% endfor %}
+</div>
+
+<div class="d-flex justify-content-center">
+{% include pagi %}
+</div>
+	</div>

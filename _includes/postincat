@@ -1,1 +1,17 @@
-{% if (page.categories) %}<ul class="nav nav-pills nav-stacked">{% for cat in page.categories %}<li class="active"><a href="{{site.baseurl}}/{{cat}}">{{site.lang.samecat}}</a></li>{% for post in site.categories[cat] limit:include.num %}<li><a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a></li>{% endfor %}{% endfor %}</ul>{% endif %}
+{% for cat in page.categories %}
+	{% for post in site.categories[cat] limit:include.num %}
+{% if page.id != post.id %}
+			{% if (include.view) %}
+		{% if include.view == "list" %}
+			{% include {{site.skin}}/view_list %}
+		{% endif %}
+		{% if include.view == "grid" %}
+			{% include {{site.skin}}/view_grid %}
+		{% endif %}
+			{% else %}
+				{% include {{site.skin}}/view_li %}
+			{% endif %}
+{% endif %}
+	{% endfor %}
+{% endfor %}
+

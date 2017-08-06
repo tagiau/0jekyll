@@ -1,0 +1,12 @@
+<div class="row">
+{% include carousel key='nature' %}
+	<div class="col-6">
+<ul class="row list-group">
+{% include postintag %}
+</ul>
+	</div>
+	<div class="col-6">
+{% include post_year num='24' %}
+	</div>
+{% include {{site.skin}}/336x280 %}
+</div>

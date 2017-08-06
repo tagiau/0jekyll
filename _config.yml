@@ -1,18 +1,21 @@
 # Site settings
-baseurl: "/0jekyll" # gh-pages
+baseurl: "/0jekyll" # /gh-pages
 asseturl: "/0jekyll/assets"
-skin: "classic"
+skin: "iunui"
+
+# langsite
 lang:
+ brandname: "iunui"
  read_more: ">>"
- showpostby: "Bài cùng mục: "
- samecat: "Xem thêm cùng mục"
- sametag: "Xem thêm cùng thẻ"
- hotpost: "Bài nổi bật"
- subcat: "Chuyên mục" # name of sub folder
+ showpostby: "Danh mục: "
+ postincat: "cùng mục"
+ postintag: "cùng thẻ"
+ ghim: "nổi bật"
+
 # Build settings
 markdown: kramdown
 permalink: /:categories/:title
-paginate: 10
+paginate: 12
 paginate_path: /page:num
 
 gems: [jekyll-paginate]

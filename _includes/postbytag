@@ -1,1 +1,12 @@
-<ul class="nav nav-pills nav-stacked"><li class="active"><a href="{{site.baseurl}}/tag#{{include.key}}">{{include.key}}</a></li>{% for post in site.tags[include.key] limit:include.num %}<li><a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a></li>{% endfor %}</ul>
+{% for post in site.tags[include.key] limit:include.num %}
+			{% if (include.view) %}
+		{% if include.view == "list" %}
+			{% include {{site.skin}}/view_list %}
+		{% endif %}
+		{% if include.view == "grid" %}
+			{% include {{site.skin}}/view_grid %}
+		{% endif %}
+			{% else %}
+				{% include {{site.skin}}/view_li %}
+			{% endif %}
+{% endfor %}

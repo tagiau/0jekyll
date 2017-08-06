@@ -1,0 +1,3 @@
+body {background:#eee;}
+.pagination{margin-bottom:0;}
+.carousel-item-next, .carousel-item-prev, .carousel-item.active {display: block !important;}

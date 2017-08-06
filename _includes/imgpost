@@ -1,0 +1,2 @@
+<img src="{{site.url}}{{site.asseturl}}{{page.id}}{{include.key}}" alt="{{include.alt}}"/>
+<center><a data-fancybox="gallery" href="{{site.url}}{{site.asseturl}}{{page.id}}{{include.key}}"><i>(xem hình)</i></a></center>

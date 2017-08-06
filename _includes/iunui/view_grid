@@ -1,0 +1,8 @@
+<div class="col-sm-4 col-lg-3">
+<div class="row">
+<div class="img-thumbnail bg-success">
+<div class="d-flex p-2"><a href="{{site.baseurl}}{{post.url}}" class="text-white">{{post.title}}</a></div>
+{% include imgthumb %}
+</div>
+</div>
+</div>

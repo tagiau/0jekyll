@@ -1,0 +1,31 @@
+<main>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-8 img-thumbnail">
+<div class="row">
+{% include {{site.skin}}/728x90 %}
+</div>
+{% assign data = site.categories[c] %}
+		{% for post in data %}
+{% assign cdate = post.date | date: "%Y" %}
+{% if cdate != date %}
+{% unless forloop.first %}</div></div>{% endunless %}
+<a data-toggle="collapse" href="#cat{{cdate}}" class="btn btn-warning">{{cdate}}</a>
+{% if data.size < 11 %}
+<div class="collapse.show" id="cat{{cdate}}"><div class="row">
+{% else %}
+<div class="collapse" id="cat{{cdate}}"><div class="row">
+{% endif %}
+{% assign date = cdate %}
+{% endif %}
+{% include {{site.skin}}/view_grid %}
+{% if forloop.last %}</div></div>{% endif %}
+		{% endfor %}
+
+			</div>
+			<div class="col-md-4">
+{% include {{site.skin}}/_side %}
+			</div>
+		</div>
+	</div>
+</main>
