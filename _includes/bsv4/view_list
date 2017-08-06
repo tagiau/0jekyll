@@ -1,0 +1,4 @@
+<div class="img-thumbnail bg-success">
+<a href="{{site.baseurl}}{{post.url}}" class="text-white">{{post.title}}</a>
+{% include imgthumb %}
+</div>

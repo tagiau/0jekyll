@@ -1,0 +1,25 @@
+<head>
+	<meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta name="description" content=""/>
+	<meta name="keywords" content=""/>
+	<meta name="author" content="binhbat"/>
+	<link href="{{site.url}}{{site.asseturl}}/favicon.png" rel="icon"/>
+	<link href="{{site.url}}{{site.asseturl}}/bootstrap/v4/css/bootstrap.min.css" rel="stylesheet"/>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.css" rel="stylesheet"/>
+	<link href="{{site.url}}{{site.asseturl}}/skin_{{site.skin}}.css" rel="stylesheet"/>	
+{% include fbmeta %}
+	<title>{{page.title}}</title>
+	<style>
+		img{display:block;margin:0 auto;max-width:75%;}
+		.navcat{display:inline-block;max-height:64px;}
+	</style>
+</head>
+<body>
+<header class="clearfix bg-warning">
+	<a href="{{site.url}}{{site.baseurl}}/"><img src="{{site.asseturl}}/logo.png" alt="{{site.lang.brandname}}" class="navcat"/></a>
+	<div class="float-right">
+	{% include navc %}
+	</div>
+</header>

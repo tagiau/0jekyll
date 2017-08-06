@@ -1,0 +1,36 @@
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-8" id="main">
+			<div class="clearfix bg-success">
+{% include navp %}
+			</div>
+		<div class="img-thumbnail">
+			<p class="h3">{{page.title}}</p>
+	{{content}}
+		</div>
+<div class="row">
+{% include postincat view='grid' %}
+</div>
+			</div>
+			<div class="col-md-4" id="side">
+{% include carousel key='assets/items' url='items' %}
+				<div class="row">
+				<div class="col-6">
+<div class="row d-block">
+{% include postintag view='list' %}
+</div>
+				</div>
+
+				<div class="col-6">
+<ul class="row list-group">
+{% include postincat %}
+</ul>
+<ul class="row list-group">
+{% include postintag %}
+</ul>
+				</div>
+          </div>
+			</div>
+
+		</div>
+	</div>

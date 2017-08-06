@@ -1,3 +1,1 @@
-{% for nav in site.categories %}
-<a href="{{site.baseurl}}/{{nav[0]}}"><img src="{{site.baseurl}}/{{nav[0]}}/name.png" alt="{{nav[0]}}" class="navcat"/></a>
-{% endfor %}
+{% for nav in site.categories %}<a href="{{site.baseurl}}/{{nav[0]}}"><img src="{{site.baseurl}}/{{nav[0]}}/name.png" alt="{{nav[0]}}" class="navcat"/></a>{% endfor %}

@@ -1,17 +1,1 @@
-{% for cat in page.categories %}
-	{% for post in site.categories[cat] limit:include.num %}
-{% if page.id != post.id %}
-			{% if (include.view) %}
-		{% if include.view == "list" %}
-			{% include {{site.skin}}/view_list %}
-		{% endif %}
-		{% if include.view == "grid" %}
-			{% include {{site.skin}}/view_grid %}
-		{% endif %}
-			{% else %}
-				{% include {{site.skin}}/view_li %}
-			{% endif %}
-{% endif %}
-	{% endfor %}
-{% endfor %}
-
+{% for cat in page.categories %}{% for post in site.categories[cat] limit:include.num %}{% if page.id !=post.id %}{% if (include.view) %}{% if include.view=="list" %}{% include {{site.skin}}/view_list %}{% endif %}{% if include.view=="grid" %}{% include {{site.skin}}/view_grid %}{% endif %}{% else %}{% include {{site.skin}}/view_li %}{% endif %}{% endif %}{% endfor %}{% endfor %}

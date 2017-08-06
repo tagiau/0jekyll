@@ -1,7 +1,1 @@
-{% assign x = include.key|slice:0,4 %}{% if x == "http" %}
-<img src="{{include.key}}" alt="{{include.alt}}"/>
-<center><a data-fancybox="gallery" href="{{include.key}}"><i>(xem hình)</i></a></center>
-{% else %}
-<img src="{{site.url}}{{site.asseturl}}{{include.key}}" alt="{{include.alt}}"/>
-<center><a data-fancybox="gallery" href="{{site.url}}{{site.asseturl}}{{include.key}}"><i>(xem hình)</i></a></center>
-{% endif %}
+{% assign x=include.key|slice:0,4 %}{% if x=="http" %}<img src="{{include.key}}" alt="{{include.alt}}"/><center><a data-fancybox="gallery" href="{{include.key}}"><i>(xem hình)</i></a></center>{% else %}<img src="{{site.url}}{{site.asseturl}}{{include.key}}" alt="{{include.alt}}"/><center><a data-fancybox="gallery" href="{{site.url}}{{site.asseturl}}{{include.key}}"><i>(xem hình)</i></a></center>{% endif %}
