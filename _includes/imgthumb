@@ -1,1 +1,20 @@
-{% if (post.thumb) %}{% assign x = post.thumb|slice:0,4 %}{% if x == "http" %}<img src="{{post.thumb}}" alt="{{post.title}}" class="img-thumbnail"/>{% else %}<img src="{{site.url}}{{site.asseturl}}/{{post.thumb}}" alt="{{post.title}}" class="img-thumbnail"/>{% endif %}{% else %}{% assign foundImage = 0 %}{% assign images = post.content | split:"<img " %}{% for image in images %}{% if image contains 'src' %}{% if foundImage == 0 %}{% assign html = image | split:"/>" | first %}<img {{ html }} alt="{{post.title}}" class="img-thumbnail"/>{% assign foundImage = 1 %}{% endif %}{% endif %}{% endfor %}{% endif %}
+{% if (post.thumb) %}
+{% assign x = post.thumb|slice:0,4 %}
+{% if x == "http" %}
+<img src="{{post.thumb}}" alt="{{post.title}}" class="img-thumbnail"/>
+{% else %}
+<img src="{{site.url}}{{site.asseturl}}/{{post.thumb}}" alt="{{post.title}}" class="img-thumbnail"/>
+{% endif %}
+{% else %}
+{% assign foundImage = 0 %}
+{% assign images = post.content | split:"<img " %}
+{% for image in images %}
+{% if image contains 'src' %}
+{% if foundImage == 0 %}
+{% assign html = image | split:"/>" | first %}
+<img {{html}} alt="{{post.title}}" class="img-thumbnail"/>
+{% assign foundImage = 1 %}
+{% endif %}
+{% endif %}
+{% endfor %}
+{% endif %}

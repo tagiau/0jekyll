@@ -1,8 +1,9 @@
-<ul class="row list-group">
 {% for post in site.posts limit:include.num %}
 {% assign cdate = post.date | date: "%Y" %}
 {% if cdate != date %}
 {% unless forloop.first %}</ul>{% endunless %}
+<ul class="row list-group">
+<li class="list-group-item active">{{cdate}}</li>
 {% assign date = cdate %}
 {% endif %}
 	{% include {{site.skin}}/view_li %}

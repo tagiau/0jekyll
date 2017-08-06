@@ -3,6 +3,7 @@ layout: post
 title: Hướng dẫn sơ
 author: admin
 tags: [ghim]
+thumb: logo.png
 ---
 Đây là bài gửi được viết từ github new file. 
 Nội dung tóm lược xem trước ở đây. Tốt nhất là hơn 22 từ trước khi thêm các thẻ html hoặc kiểu markdown

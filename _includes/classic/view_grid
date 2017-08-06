@@ -1,5 +1,9 @@
-<div class="col-sm-6 img-thumbnail"><div class="row">
-<h4><a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a></h4>
-<p>{% if (post.author) %}<i class="glyphicon glyphicon-user"></i><span><a href="{{site.baseurl}}/{{post.author}}">{{post.author}}</a> </span>{% endif %}<i class="glyphicon glyphicon-time"></i>{{post.date|time_tag}}</p>
-{{post.content|strip_html|truncate:150}}
-</div></div>
+<div class="col-sm-6 img-thumbnail">
+	<div class="col-xs-12">
+<div class="row">
+	<div class="max180w pull-right">{% include imgthumb %}</div>
+	<h4><a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a></h4>
+	{{post.content|strip_html|truncate:100}}
+</div>
+	</div>
+</div>

@@ -2,7 +2,7 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-xs-12 col-sm-6 col-md-8">
-				<div class="row">
+				<div class="author">
 <h3>{{site.lang.showpostby}}{{a}}</h3>
 {% include {{site.skin}}/728x90 %}
 {% for post in site.posts limit:include.num %}
@@ -15,7 +15,7 @@
 <div class="collapse" id="auth{{cdate}}">
 {% assign date = cdate %}
 {% endif %}
-{% include {{site.skin}}/view_grid %}
+{% include {{site.skin}}/view_li %}
 {% if forloop.last %}</div>{% endif %}
 
 {% endif %}

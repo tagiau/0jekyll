@@ -1,7 +1,7 @@
 # Site settings
 baseurl: "/0jekyll" # /gh-pages
 asseturl: "/0jekyll/assets"
-skin: "iunui"
+skin: "classic"
 
 # langsite
 lang:

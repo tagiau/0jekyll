@@ -10,7 +10,7 @@ Xong tạo bài viết trong _posts/(2017-01-30-ten-bai-viet.md) viết liền v
 Khi muốn thêm album vào chổ nào trong bài thì dùng 
 
 ```
-{ % include album name='demoalbum' % }
+{ % include album key='demoalbum' % }
 ```
 Nội dung ở đây hổ trợ markdown syntax
-{% include album name='demoalbum' %}
+{% include album key='demoalbum' %}
