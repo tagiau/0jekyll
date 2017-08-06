@@ -14,7 +14,7 @@
 	<style>
 		img{display:block;margin:0 auto;max-width:75%;}
 		.navcat{display:inline-block;max-height:48px;}
-		.max180w{width:180px;height:180px;overflow:hidden;object-fit:cover;}
+		.thumb180{width:180px;height:180px;overflow:hidden;object-fit:cover;}
 	</style>
 </head>
 <body>

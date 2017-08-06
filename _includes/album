@@ -1,8 +1,1 @@
-<div class="row">
-{% for image in site.static_files %}{% if image.path contains include.key %}
-<div class="col-sm-6 col-lg-4"><div class="row">
-<a data-fancybox="gallery" href="{{site.url}}{{site.baseurl}}{{image.path}}">
-<img src="{{site.url}}{{site.baseurl}}{{image.path}}" alt="{{image.basename}}" class="img-thumbnail"/>
-</a></div></div>
-{% endif %}{% endfor %}
-</div>
+<div class="row">{% for image in site.static_files %}{% if image.path contains include.key %}<div class="col-sm-6 col-lg-4"><div class="row"><a data-fancybox="gallery" href="{{site.url}}{{site.baseurl}}{{image.path}}"><img src="{{site.url}}{{site.baseurl}}{{image.path}}" alt="{{image.basename}}" class="img-thumbnail"/></a></div></div>{% endif %}{% endfor %}</div>

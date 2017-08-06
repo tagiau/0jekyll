@@ -13,9 +13,7 @@
 </div>
 			</div>
 			<div class="col-md-4" id="side">
-			<div class="row">
 {% include carousel key='assets/items' url='items' %}
-			</div>
 				<div class="row">
 				<div class="col-6">
 <div class="row d-block">

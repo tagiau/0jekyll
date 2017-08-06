@@ -1,5 +1,5 @@
-<div class="row">
 {% include carousel key='nature' %}
+<div class="row">
 	<div class="col-6">
 <ul class="row list-group">
 {% include postintag %}

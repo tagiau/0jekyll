@@ -1,9 +1,10 @@
-<div class="col-sm-6 img-thumbnail">
-	<div class="col-xs-12">
+<div class="col-xs-6 img-thumbnail">
 <div class="row">
-	<div class="max180w pull-right">{% include imgthumb %}</div>
+
+	<span class="pull-right thumb180">{% include imgthumb %}</span>
 	<h4><a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a></h4>
 	{{post.content|strip_html|truncate:100}}
+
 </div>
-	</div>
 </div>
+

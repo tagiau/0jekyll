@@ -8,8 +8,10 @@
 		<div class="row">
 <h4>{{page.title}}</h4>
 <p>{% if (page.author) %}<i class="glyphicon glyphicon-user"></i><span><a href="{{site.baseurl}}/{{page.author}}">{{page.author}}</a> </span>{% endif %}<i class="glyphicon glyphicon-time"></i>{{page.date|time_tag}}</p>
-			<div id="entry" class="col-xs-12 img-thumbnail">
+			<div id="entry" class="col-sm-12 img-thumbnail">
+
 			{{content}}
+
 			</div>
 {% include {{site.skin}}/728x90 %}
 		</div>
