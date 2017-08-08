@@ -1,4 +1,4 @@
-{% include carousel key='nature' %}
+{% include carousel key='assets/ortherslider' url='orther' %}
 <div class="row">
 	<div class="col-6">
 <ul class="row list-group">

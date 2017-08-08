@@ -1,1 +1,31 @@
-{% for post in site.posts limit:include.num %}{% assign cdate=post.date | date: "%Y" %}{% if cdate !=date %}{% unless forloop.first %}</ul>{% endunless %}<ul class="row list-group"><li class="list-group-item active">{{cdate}}</li>{% assign date=cdate %}{% endif %}{% include{{site.skin}}/view_li %}{% if forloop.last %}</ul>{% endif %}{% endfor %}
+{% for post in site.posts  %}
+    {% capture siteyear %}{{post.date | date: "%Y"}}{% endcapture %}
+    {% capture sitemonth %}{{post.date | date: "%B"}}{% endcapture %}
+    {% capture postyear %}{{post.previous.date | date: "%Y"}}{% endcapture %}
+    {% capture postmonth %}{{post.previous.date | date: "%B"}}{% endcapture %}
+
+    {% if forloop.first %}
+<h3><a href="{{site.baseurl}}/archive#{{siteyear}}">{{siteyear}}</a></h3>
+<h4 class="d-block"><a data-toggle="collapse" href="#collapse{{siteyear}}{{sitemonth}}">{{sitemonth}}</a></h4>
+    <ul class="list-unstyled collapse.show collapse in" id="collapse{{siteyear}}{{sitemonth}}">
+    {% endif %}
+
+    <li><a href="{{post.url}}">{{post.title}}</a></li>
+
+    {% if forloop.last %}
+    </ul>
+    {% else %}
+        {% if siteyear != postyear %}
+        </ul>
+        <h3><a href="{{site.baseurl}}/archive#{{postyear}}">{{postyear}}</a></h3>
+<h4 class="d-block"><a data-toggle="collapse" href="#collapse{{postyear}}{{postmonth}}">{{postmonth}}</a></h4>
+        <ul class="list-unstyled collapse" id="collapse{{postyear}}{{postmonth}}">
+        {% else %}    
+            {% if sitemonth != postmonth %}
+            </ul>
+<h4 class="d-block"><a data-toggle="collapse" href="#collapse{{postyear}}{{postmonth}}">{{postmonth}}</a></h4>
+            <ul class="list-unstyled collapse" id="collapse{{postyear}}{{postmonth}}">
+            {% endif %}
+        {% endif %}
+    {% endif %}
+{% endfor %}

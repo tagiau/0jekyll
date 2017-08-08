@@ -1,0 +1,54 @@
+<main>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-12 col-sm-6 col-md-8">
+			<div class="row">
+{% include {{site.skin}}/728x90 %}
+				<div class="thumbnail">
+            <ul>
+                {% assign currentYear = site.time | date: "%Y" %}
+                {% assign currentMonth = site.time | date: "%B" %}
+                {% for post in site.posts %}
+
+                    {% assign postYear = post.date | date: "%Y" %}
+                    {% assign postMonth = post.date  | date: "%B" %}
+
+                    {% if forloop.first %}
+                    <li><a data-toggle="collapse" href="#collapse{{postYear}}">{{postYear}}</a>
+                        <ul class="collapse in" id="collapse{{postYear}}">
+                            <li><a data-toggle="collapse" href="#collapse{{postYear}}{{postMonth}}">{{postMonth}}</a>
+                                <ul class="collapse in" id="collapse{{postYear}}{{postMonth}}">
+                    {% endif %}
+
+                    {% if (postYear == currentYear and postMonth == currentMonth) or forloop.first %}
+                        <li><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></li>
+                    {% endif %}
+
+                    {% if postYear == currentYear and postMonth != currentMonth %}
+                        </ul></li>
+                            <li><a data-toggle="collapse" href="#collapse{{postYear}}{{postMonth}}">{{postMonth}}</a>
+                                <ul class="collapse" id="collapse{{postYear}}{{postMonth}}">
+                                <li><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></li>
+                    {% endif %}
+
+                    {% if postYear != currentYear %}
+                        </ul></li></ul></li>
+                        <li><a data-toggle="collapse" href="#collapse{{postYear}}">{{postYear}}</a>
+                            <ul class="collapse" id="collapse{{postYear}}">
+                                <li><a data-toggle="collapse" href="#collapse{{postYear}}{{postMonth}}">{{postMonth}}</a>
+                                    <ul class="collapse" id="collapse{{postYear}}{{postMonth}}">
+                                        <li><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></li>
+                    {% endif %}
+                    {% assign currentYear = postYear %}
+                    {% assign currentMonth = postMonth %}
+                {% endfor %}
+            </ul>
+			</div>
+		</div>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-4">
+{% include {{site.skin}}/_side %}
+			</div>
+		</div>
+	</div>
+</main>

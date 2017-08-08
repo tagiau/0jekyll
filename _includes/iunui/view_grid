@@ -2,7 +2,9 @@
 <div class="row d-block">
 <div class="img-thumbnail bg-success">
 <a href="{{site.baseurl}}{{post.url}}" class="text-white">{{post.title}}</a>
+<div class="thumbfix">
 {% include imgthumb %}
+</div>
 </div>
 </div>
 </div>
